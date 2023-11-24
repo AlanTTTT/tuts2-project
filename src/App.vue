@@ -1,15 +1,23 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <topNav/>
+  <part1 />
+  <part2 />
+  <part3/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import part1 from './components/part1.vue'
+import part2 from './components/part2.vue'
+import part3 from './components/part3.vue'
+import topNav from './components/topNav.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    part1,
+    part2,
+    part3,
+    topNav
   }
 }
 </script>
@@ -21,6 +29,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
