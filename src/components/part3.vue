@@ -12,28 +12,28 @@
             <el-col :span="4">
               <div class="col1">
                 <img class="tea" alt="tea" src="../assets/image/tea1.jpg"/>
-                <h1>Flowering tea</h1>
+                <h1 class="title">Flowering tea</h1>
                 <el-rate v-model="value1" />
               </div>
             </el-col>
             <el-col :span="4">
               <div class="col1">
                 <img class="tea" alt="tea" src="../assets/image/tea2.jpg"/>
-                <h1>Flowering tea</h1>
+                <h1 class="title">Flowering tea</h1>
                 <el-rate v-model="value1" />
               </div>
             </el-col>
             <el-col :span="4">
               <div class="col1">
                 <img class="tea" alt="tea" src="../assets/image/tea3.jpg"/>
-                <h1>Flowering tea</h1>
+                <h1 class="title">Flowering tea</h1>
                 <el-rate v-model="value1" />
               </div>
             </el-col>
             <el-col :span="4">
               <div class="col1">
                 <img class="tea" alt="tea" src="../assets/image/tea4.jpg"/>
-                <h1>Flowering tea</h1>
+                <h1 class="title">Flowering tea</h1>
                 <el-rate v-model="value1" />
               </div>
             </el-col>
@@ -42,28 +42,28 @@
             <el-col :span="4">
               <div class="col1">
                 <img class="tea" alt="tea" src="../assets/image/tea5.jpg"/>
-                <h1>Flowering tea</h1>
+                <h1 class="title">Flowering tea</h1>
                 <el-rate v-model="value1" />
               </div>
             </el-col>
             <el-col :span="4">
               <div class="col1">
                 <img class="tea" alt="tea" src="../assets/image/tea6.jpg"/>
-                <h1>Flowering tea</h1>
+                <h1 class="title">Flowering tea</h1>
                 <el-rate v-model="value1" />
               </div>
             </el-col>
             <el-col :span="4">
               <div class="col1">
                 <img class="tea" alt="tea" src="../assets/image/tea7.jpg"/>
-                <h1>Flowering tea</h1>
+                <h1 class="title">Flowering tea</h1>
                 <el-rate v-model="value1" />
               </div>
             </el-col>
             <el-col :span="4">
               <div class="col1">
                 <img class="tea" alt="tea" src="../assets/image/tea8.jpg"/>
-                <h1>Flowering tea</h1>
+                <h1 class="title">Flowering tea</h1>
                 <el-rate v-model="value1" />
               </div>
             </el-col>
@@ -92,10 +92,24 @@
   <style scoped>
   .container1{
     background-color: #f7f5f2 !important;
-  }
-  .row1{
-    justify-content: center;
-    align-items: center;
+    .row1{
+      justify-content: center;
+      align-items: center;
+    }
+    .row2{
+      justify-content: center;
+      .title{
+        font-size: 20px;
+        color: black;
+      }
+    }
+    .row3{
+      justify-content: center;
+      .title{
+        font-size: 20px;
+        color: black;
+      }
+    }
   }
   .tea{
     max-width: 100%;
