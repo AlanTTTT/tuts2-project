@@ -1,5 +1,5 @@
 <template>
-    <div class="container1">
+    <div class="container1" v-motion-roll-visible-bottom :delay="200">
         <el-row class="row1">
             <el-col :span="20">
               <div class="col1">
