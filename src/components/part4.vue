@@ -3,6 +3,38 @@
       <el-row class="row1">
             <el-col :span="4">
               <div class="col1">
+              <img key="tea" alt="tea1" src="../assets/image/tea-home-counter1-1.png" />
+              <span>
+                <div id="1" ref="element">Initial Value</div>
+              </span>
+              <p>Icon Collections</p>
+              </div>
+            </el-col>
+            <el-col :span="4">
+              <div class="col1">
+              <img key="tea" alt="tea1" src="../assets/image/tea-home-counter2.png" />
+              <span>
+                <div id="1" ref="element">Initial Value</div>
+              </span>
+              <p>Masonry Layouts</p>
+              </div>
+            </el-col>
+            <el-col :span="4">
+              <div class="col1">
+              <img key="tea" alt="tea1" src="../assets/image/tea-home-counter3.png" />
+              <span>
+                <div id="1" ref="element">Initial Value</div>
+              </span>
+              <p>Only The Best</p>
+              </div>
+            </el-col>
+            <el-col :span="4">
+              <div class="col1">
+              <img key="tea" alt="tea1" src="../assets/image/tea-home-counter4.png" />
+              <span>
+                <div id="1" ref="element">Initial Value</div>
+              </span>
+              <p>Elated Design</p>
               </div>
             </el-col>
         </el-row>
@@ -29,7 +61,7 @@
   <!-- Add "scoped" attribute to limit CSS to this component only -->
   <style scoped>
   .container1{
-    background-color: #f7f5f2 !important;
+    background-color: unset !important;
     .row1{
       justify-content: center;
       align-items: center;

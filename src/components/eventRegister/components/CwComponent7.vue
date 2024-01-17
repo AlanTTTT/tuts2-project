@@ -1,0 +1,240 @@
+<template>
+    <div class='part2Container'>
+        <el-divider class='line1' />
+        <el-divider class='line2' />
+        <div class='background'>
+            <el-row class='row1'>
+                <el-col
+                    :lg='15'
+                    :md='16'
+                    :sm='17'
+                    :xl='14'
+                    :xs='18'
+                >
+                    <h1 class='titleContainer'>
+                        Everything About One-Click Trading and How to Activate It
+                    </h1>
+                    <p>The built-in one-click trading function simplifies the trading process and significantly reduces the amount of time it takes to fulfill trades. You can use it to open and close orders, set stop-loss and take-profit levels, and place pending orders all with the minimum number of clicks.</p>
+                    <thirdLogin />
+                    <h1 class='titleContainer' style='padding-top: 30px'>
+                        See Why Serious Trader choose Headline.net?
+                    </h1>
+                </el-col>
+            </el-row>
+            <el-row class='row2' style='justify-content: space-evenly'>
+                <el-col
+                    class='colContainer'
+                    :lg='6'
+                    :md='10'
+                    :sm='10'
+                    :xl='5'
+                    :xs='24'
+                >
+                    <img alt='fotor' class='fotor' src='../../../images/cpi1/nfp07/pointCw.png' />
+                    <h1 class='title'>
+                        One-Click Trading
+                    </h1>
+                    <p class='content'>
+                        Invest Anytime, anywhere. Registering for your user account only takes THREE seconds
+                    </p>
+                </el-col>
+                <el-col
+                    class='colContainer'
+                    :lg='6'
+                    :md='10'
+                    :sm='10'
+                    :xl='5'
+                    :xs='24'
+                >
+                    <img alt='fotor' class='fotor' src='../../../images/cpi1/g7-summit/fotor3.png' />
+                    <h1 class='title'>
+                        Trade CFD with Crypto
+                    </h1>
+                    <p class='content'>
+                        Gets easy to transfer your money without any involvement of banks and other financial institutions for CFDs trading
+                    </p>
+                </el-col>
+
+                <el-col
+                    class='colContainer col1'
+                    :lg='6'
+                    :md='10'
+                    :sm='10'
+                    :xl='5'
+                    :xs='24'
+                >
+                    <img alt='fotor' class='fotor' src='../../../images/cpi1/g7-summit/fotor1.png' />
+                    <h1 class='title'>
+                        Non-KYC
+                    </h1>
+                    <p class='content'>
+                        No personal information such as their name, address, and ID card during DEPOSIT
+                    </p>
+                </el-col>
+
+                <el-col
+                    class='colContainer col1'
+                    :lg='6'
+                    :md='10'
+                    :sm='10'
+                    :xl='5'
+                    :xs='24'
+                >
+                    <img alt='fotor' class='fotor' src='../../../images/cpi1/g7-summit/fotor2.png' />
+                    <h1 class='title'>
+                        Tax FREE in European Countries
+                    </h1>
+                    <p class='content'>
+                        Maximise your earnings that are not taxed
+                    </p>
+                </el-col>
+            </el-row>
+            <el-button class='registerButton lp_btn lp_btn_register' plain text @click='jumpPage(1)'>
+                <p class='lp_btn lp_btn_register'>
+                    Learn More
+                </p>
+            </el-button>
+        </div>
+    </div>
+</template>
+
+<script>
+import thirdLogin from '@/themeCommon/components/thirdLoginEvent.vue'
+export default {
+    components: {
+        thirdLogin,
+    },
+    setup () {
+        const jumpPage = (attr) => {
+            switch (attr) {
+                case 1 :
+                    window.open('https://www.headline.net/en-US/register')
+                    break
+            }
+        }
+        return {
+            jumpPage,
+        }
+    }
+}
+</script>
+
+<style lang="scss" scoped>
+@import '@/sass/mixin.scss';
+.line1{
+  margin: 5px 0 !important;
+  border-top: 6px #A80C0C solid !important;
+}
+.line2{
+  margin: 0 0 10px  !important;
+  border-top: 1px #A80C0C solid !important;
+}
+.registerButton{
+  background-color: #CB0D11 !important;
+  color: #fff;
+  border: unset !important;
+  border-radius: 30px !important;
+  width: 169px;
+  height: 55px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.registerButton:hover{
+  color: #000;
+}
+.part2Container{
+  position: relative;
+  background-image: url("../../../images/cpi1/nfp07/backgroundEvent2Cw.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #fff;
+  text-align: center;
+    .background{
+      background-color: rgba(0,0,0,0.6);
+      padding: 50px 0;
+      .row1{
+        justify-content: center;
+      }
+    }
+    .titleContainer{
+      font-size: 56px;
+    }
+    .content{
+      font-size: 18px;
+      line-height: 1.8em;
+    }
+    .row2{
+      padding: 50px 0 30px;
+      .colContainer{
+        .title{
+          font-size: 30px;
+          text-decoration: underline;
+       }
+        .content{
+          font-size: 20px;
+          padding-top: 20px;
+        }
+        .fotor{
+          width: 100px;
+       }
+      }
+    }
+  }
+
+@media screen and (max-width: 1100px) {
+.background{
+  .row{
+    .intro{
+      padding: 40px 0;
+        h1{
+          font-weight: bold;
+          font-size: 60px;
+        }
+        p{
+          font-size: 30px;
+        }
+      }
+    }
+}
+  .container2{
+    .row{
+      .heading{
+        font-size: 30px;
+        padding-top: 30px;
+      }
+      .text{
+        font-size: 18px;
+        padding: 40px 0;
+      }
+    }
+        .country{
+            width: 100px;
+          }
+        }
+
+    .background2{
+      .socialMedia{
+        width: 45px;
+      }
+      .title{
+        font-size: 35px;
+      }
+      .box-card{
+        font-size: 30px;
+        width: 300px;
+        height: 140px;
+      }
+    }
+}
+@media screen and (max-width: 767px) {
+
+  .titleContainer{
+    font-size: 35px !important;
+  }
+  .col1{
+    padding-top: 60px;
+  }
+}
+</style>

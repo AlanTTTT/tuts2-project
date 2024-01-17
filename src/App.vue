@@ -1,23 +1,17 @@
 <template>
   <topNav/>
-  <carousel/>
-  <part2 />
-  <part3/>
+  <part1/>
 </template>
 
 <script>
-import carousel from './components/carousel.vue'
-import part2 from './components/part2.vue'
-import part3 from './components/part3.vue'
+import part1 from './components/eventRegister/components/csContent.vue'
 import topNav from './components/topNav.vue'
 
 export default {
   name: 'App',
   components: {
-    part2,
-    part3,
+    part1,
     topNav,
-    carousel
   }
 }
 </script>

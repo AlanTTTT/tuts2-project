@@ -4,7 +4,8 @@
             <el-col :span="20">
               <div class="col1">
                 <h1>Easy to Customize</h1>
-                <P>The Visual Composer drag-and-drop page builder is packed with all Elated Themes. Setting up your website and creating pages full of stunning content.</P>
+                <P>The Visual Composer drag-and-drop page builder is packed with all Elated Themes.</p>
+                  <p>Setting up your website and creating pages full of stunning content.</P>
               </div>
             </el-col>
         </el-row>
@@ -13,28 +14,28 @@
               <div class="col1">
                 <img class="tea" alt="tea" src="../assets/image/tea1.jpg"/>
                 <h1 class="title">Flowering tea</h1>
-                <el-rate v-model="value1" />
+                <el-rate v-model="value1" disabled />
               </div>
             </el-col>
             <el-col :span="4">
               <div class="col1">
                 <img class="tea" alt="tea" src="../assets/image/tea2.jpg"/>
                 <h1 class="title">Flowering tea</h1>
-                <el-rate v-model="value1" />
+                <el-rate v-model="value2" disabled />
               </div>
             </el-col>
             <el-col :span="4">
               <div class="col1">
                 <img class="tea" alt="tea" src="../assets/image/tea3.jpg"/>
                 <h1 class="title">Flowering tea</h1>
-                <el-rate v-model="value1" />
+                <el-rate v-model="value1" disabled />
               </div>
             </el-col>
             <el-col :span="4">
               <div class="col1">
                 <img class="tea" alt="tea" src="../assets/image/tea4.jpg"/>
                 <h1 class="title">Flowering tea</h1>
-                <el-rate v-model="value1" />
+                <el-rate v-model="value2" disabled />
               </div>
             </el-col>
         </el-row>
@@ -43,28 +44,28 @@
               <div class="col1">
                 <img class="tea" alt="tea" src="../assets/image/tea5.jpg"/>
                 <h1 class="title">Flowering tea</h1>
-                <el-rate v-model="value1" />
+                <el-rate v-model="value1" disabled />
               </div>
             </el-col>
             <el-col :span="4">
               <div class="col1">
                 <img class="tea" alt="tea" src="../assets/image/tea6.jpg"/>
                 <h1 class="title">Flowering tea</h1>
-                <el-rate v-model="value1" />
+                <el-rate v-model="value2" disabled />
               </div>
             </el-col>
             <el-col :span="4">
               <div class="col1">
                 <img class="tea" alt="tea" src="../assets/image/tea7.jpg"/>
                 <h1 class="title">Flowering tea</h1>
-                <el-rate v-model="value1" />
+                <el-rate v-model="value1" disabled/>
               </div>
             </el-col>
             <el-col :span="4">
               <div class="col1">
                 <img class="tea" alt="tea" src="../assets/image/tea8.jpg"/>
                 <h1 class="title">Flowering tea</h1>
-                <el-rate v-model="value1" />
+                <el-rate v-model="value2" disabled/>
               </div>
             </el-col>
         </el-row>
@@ -76,8 +77,8 @@
   export default {
     name: 'HelloWorld2',
     setup() {
-      const value1 = ref(null)
-      const value2 = ref(null)
+      const value1 = ref(4)
+      const value2 = ref(5)
       const colors = ref(['#99A9BF', '#F7BA2A', '#FF9900'])
     return {
       value1,
